@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		267CCC7649AACC1F021B02E3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE4F6A43E096605CB022864 /* libPods.a */; };
 		88A5A5421AC7378F0045B461 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A5A5411AC7378F0045B461 /* AppKit.framework */; };
 		88A5A5441AC7378F0045B461 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A5A5431AC7378F0045B461 /* Foundation.framework */; };
 		88A5A5491AC7378F0045B461 /* SFJumpToLine.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 88A5A5481AC7378F0045B461 /* SFJumpToLine.xcscheme */; };
 		88A5A54C1AC7378F0045B461 /* SFJumpToLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A5A54B1AC7378F0045B461 /* SFJumpToLine.m */; };
-		88A5A5541AC737A60045B461 /* NSView+FindSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A5A5531AC737A60045B461 /* NSView+FindSubView.m */; };
+		88F188951AC7FF8F00FE77C5 /* DTXcodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F1888F1AC7FF8F00FE77C5 /* DTXcodeUtils.m */; };
+		88F188961AC7FF8F00FE77C5 /* NSView+FindSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F188941AC7FF8F00FE77C5 /* NSView+FindSubView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4CE4F6A43E096605CB022864 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A5A53E1AC7378F0045B461 /* SFJumpToLine.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFJumpToLine.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A5A5411AC7378F0045B461 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		88A5A5431AC7378F0045B461 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -24,10 +23,11 @@
 		88A5A5481AC7378F0045B461 /* SFJumpToLine.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = SFJumpToLine.xcscheme; path = SFJumpToLine.xcodeproj/xcshareddata/xcschemes/SFJumpToLine.xcscheme; sourceTree = SOURCE_ROOT; };
 		88A5A54A1AC7378F0045B461 /* SFJumpToLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFJumpToLine.h; sourceTree = "<group>"; };
 		88A5A54B1AC7378F0045B461 /* SFJumpToLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFJumpToLine.m; sourceTree = "<group>"; };
-		88A5A5521AC737A60045B461 /* NSView+FindSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+FindSubView.h"; sourceTree = "<group>"; };
-		88A5A5531AC737A60045B461 /* NSView+FindSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+FindSubView.m"; sourceTree = "<group>"; };
-		9545EC59B1BF43FFB20D73D4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CC8C5A07185E6F276A593201 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		88F1888E1AC7FF8F00FE77C5 /* DTXcodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeUtils.h; sourceTree = "<group>"; };
+		88F1888F1AC7FF8F00FE77C5 /* DTXcodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTXcodeUtils.m; sourceTree = "<group>"; };
+		88F188911AC7FF8F00FE77C5 /* DTXcodeHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTXcodeHeaders.h; sourceTree = "<group>"; };
+		88F188931AC7FF8F00FE77C5 /* NSView+FindSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+FindSubView.h"; sourceTree = "<group>"; };
+		88F188941AC7FF8F00FE77C5 /* NSView+FindSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+FindSubView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,29 +37,18 @@
 			files = (
 				88A5A5421AC7378F0045B461 /* AppKit.framework in Frameworks */,
 				88A5A5441AC7378F0045B461 /* Foundation.framework in Frameworks */,
-				267CCC7649AACC1F021B02E3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8681153EAA506BD87FA0DE5D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC8C5A07185E6F276A593201 /* Pods.debug.xcconfig */,
-				9545EC59B1BF43FFB20D73D4 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		88A5A5351AC7378F0045B461 = {
 			isa = PBXGroup;
 			children = (
 				88A5A5451AC7378F0045B461 /* SFJumpToLine */,
 				88A5A5401AC7378F0045B461 /* Frameworks */,
 				88A5A53F1AC7378F0045B461 /* Products */,
-				8681153EAA506BD87FA0DE5D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,7 +65,6 @@
 			children = (
 				88A5A5411AC7378F0045B461 /* AppKit.framework */,
 				88A5A5431AC7378F0045B461 /* Foundation.framework */,
-				4CE4F6A43E096605CB022864 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,7 +72,8 @@
 		88A5A5451AC7378F0045B461 /* SFJumpToLine */ = {
 			isa = PBXGroup;
 			children = (
-				88A5A5551AC737BF0045B461 /* Categories */,
+				88F1888C1AC7FF8F00FE77C5 /* DTXcodeUtils */,
+				88F188921AC7FF8F00FE77C5 /* FindSubView */,
 				88A5A54A1AC7378F0045B461 /* SFJumpToLine.h */,
 				88A5A54B1AC7378F0045B461 /* SFJumpToLine.m */,
 				88A5A5461AC7378F0045B461 /* Supporting Files */,
@@ -101,13 +90,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		88A5A5551AC737BF0045B461 /* Categories */ = {
+		88F1888C1AC7FF8F00FE77C5 /* DTXcodeUtils */ = {
 			isa = PBXGroup;
 			children = (
-				88A5A5521AC737A60045B461 /* NSView+FindSubView.h */,
-				88A5A5531AC737A60045B461 /* NSView+FindSubView.m */,
+				88F1888D1AC7FF8F00FE77C5 /* Classes */,
+				88F188901AC7FF8F00FE77C5 /* XcodeHeaders */,
 			);
-			name = Categories;
+			path = DTXcodeUtils;
+			sourceTree = "<group>";
+		};
+		88F1888D1AC7FF8F00FE77C5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				88F1888E1AC7FF8F00FE77C5 /* DTXcodeUtils.h */,
+				88F1888F1AC7FF8F00FE77C5 /* DTXcodeUtils.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		88F188901AC7FF8F00FE77C5 /* XcodeHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				88F188911AC7FF8F00FE77C5 /* DTXcodeHeaders.h */,
+			);
+			path = XcodeHeaders;
+			sourceTree = "<group>";
+		};
+		88F188921AC7FF8F00FE77C5 /* FindSubView */ = {
+			isa = PBXGroup;
+			children = (
+				88F188931AC7FF8F00FE77C5 /* NSView+FindSubView.h */,
+				88F188941AC7FF8F00FE77C5 /* NSView+FindSubView.m */,
+			);
+			path = FindSubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,11 +132,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88A5A54F1AC7378F0045B461 /* Build configuration list for PBXNativeTarget "SFJumpToLine" */;
 			buildPhases = (
-				3A66E100A6DBD10488E3BE80 /* Check Pods Manifest.lock */,
 				88A5A53A1AC7378F0045B461 /* Sources */,
 				88A5A53B1AC7378F0045B461 /* Resources */,
 				88A5A53C1AC7378F0045B461 /* Frameworks */,
-				593C1A0B4C455D4F14C2DAFA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,46 +187,14 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3A66E100A6DBD10488E3BE80 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		593C1A0B4C455D4F14C2DAFA /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		88A5A53A1AC7378F0045B461 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88A5A5541AC737A60045B461 /* NSView+FindSubView.m in Sources */,
 				88A5A54C1AC7378F0045B461 /* SFJumpToLine.m in Sources */,
+				88F188951AC7FF8F00FE77C5 /* DTXcodeUtils.m in Sources */,
+				88F188961AC7FF8F00FE77C5 /* NSView+FindSubView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +272,6 @@
 		};
 		88A5A5501AC7378F0045B461 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC8C5A07185E6F276A593201 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
@@ -306,7 +286,6 @@
 		};
 		88A5A5511AC7378F0045B461 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9545EC59B1BF43FFB20D73D4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
