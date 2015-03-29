@@ -1,5 +1,5 @@
 # SFJumpToLine
-Xcode plugin that move the instruction pointer to the selected line.
+Xcode plugin that moves the instruction pointer to the selected line.
 
 ### Install:
 
